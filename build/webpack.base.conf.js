@@ -30,6 +30,7 @@ module.exports = {
     }
   },
   module: {
+    //各種資源的打包方式
     rules: [
       {
         test: /\.vue$/,
@@ -45,8 +46,8 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {
-          limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          limit: 10000,//若超過10則為獨立檔案
+          name: utils.assetsPath('img/[name].[hash:7].[ext]') //實際路徑規則寫在Utils.js的assetsPath方法中
         }
       },
       {
