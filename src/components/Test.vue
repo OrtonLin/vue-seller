@@ -1,6 +1,6 @@
 <template>
 <div class="div-red-txt">
-  This text from Test vue!
+  <span class="icon-thumb_up"></span>This text from Test vue!
   {{msg}}
 </div>
 </template>
