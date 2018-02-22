@@ -13,6 +13,20 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+// 导入express
+const express = require('express')
+const app = express()
+
+// 1、读取json数据
+
+var goods = require('../data/01-goods.json');
+var ratings = require('../data/02-ratings.json');
+var shopers = require('../data/03-shopers.json');
+
+// 2、路由
+var routes = express.Router();
+
+
 //baseWebpackConfigh與當前配置進行合併
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -43,7 +57,20 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
-    }
+    },
+    before(app){
+      //3 API接口
+      app.get('/api/goods',(req,res)=>{
+        res.json(goods);
+      }),
+      app.get('/api/ratings',(req,res)=>{
+        res.json(ratings);
+      }),
+      app.get('/api/shopers',(req,res)=>{
+        res.json(shopers);
+      })
+	  }
+
   },
   plugins: [
     new webpack.DefinePlugin({
