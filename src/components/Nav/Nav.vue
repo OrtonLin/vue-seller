@@ -1,14 +1,8 @@
 <<template>
 <div class="nav">
-    <div class="nav-item goods">
-      選購
-    </div>
-    <div class="nav-item ratings">
-      評價
-    </div>
-    <div class="nav-item sellers">
-      商家
-    </div>
+    <router-link class="nav-item goods" to="/goods">選購</router-link>
+    <router-link class="nav-item ratings" to="/ratings">評價</router-link>
+    <router-link class="nav-item sellers" to="/sellers">商家</router-link>
   </div>
 </template>
 
