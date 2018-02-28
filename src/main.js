@@ -21,7 +21,8 @@ const routes = [
 ]
 //instance for vue router
 const router = new VueRouter({
-  routes
+  routes,
+  linkActiveClass:'active'
 })
 
 
