@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icon-seller';
-  src:  url('fonts/icon-seller.eot?2c6ke3');
-  src:  url('fonts/icon-seller.eot?2c6ke3#iefix') format('embedded-opentype'),
-    url('fonts/icon-seller.ttf?2c6ke3') format('truetype'),
-    url('fonts/icon-seller.woff?2c6ke3') format('woff'),
-    url('fonts/icon-seller.svg?2c6ke3#icon-seller') format('svg');
+  src:  url('../fonts/icon-seller.eot?2c6ke3');
+  src:  url('../fonts/icon-seller.eot?2c6ke3#iefix') format('embedded-opentype'),
+    url('../fonts/icon-seller.ttf?2c6ke3') format('truetype'),
+    url('../fonts/icon-seller.woff?2c6ke3') format('woff'),
+    url('../fonts/icon-seller.svg?2c6ke3#icon-seller') format('svg');
   font-weight: normal;
   font-style: normal;
 }

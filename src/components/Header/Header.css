@@ -1,0 +1,35 @@
+.header {
+  height:160px;
+  padding-top: 20px;
+}
+.header .top-wrapper{
+  position: relative;
+}
+.header .top-wrapper .back-wrapper{
+  width:50px;
+  height: 31px;
+  background-color:yellow;
+  position:absolute;
+  left:0px;
+  top:0px;
+  text-align: center;
+  line-height: 31px;
+}
+.header .top-wrapper .back-wrapper span{
+  display:inline-block;/*for span to support text-align and inline-height*/
+  color:white;
+}
+.header .top-wrapper .search-wrapper{
+  width:100%;
+  height: 31px;
+  background-color:purple;
+}
+.header .top-wrapper .more-wrapper{
+  width:104px;
+  height: 31px;
+  background-color:red;
+  position:absolute;
+  right:0px;
+  top:0px;
+
+}
